@@ -1,6 +1,6 @@
 # rpict-mqtt-bridge
 
-This is a very simple functional, untested and "as-is" public domain implementation of an MQTT bridge reading Lechacals RPICT Raspberry Pi hats.
+This is a very simple functional, untested and "as-is" public domain implementation of an MQTT bridge reading Lechacals RPICT Raspberry Pi hats. Written in Golang, for portability and speed.
 
 My personal setup has a "RPICT3V4v5" main hat, measuring the 3 phase voltages, then 4 extra hats all "RPICT8v5", measuring currents.
 

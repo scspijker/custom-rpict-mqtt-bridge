@@ -15,7 +15,7 @@ This project supports Home Assistant MQTT auto discovery and will broadcast disc
 
 ## Config
 
-The config has three main sections
+The ordering of the channels section is important, this is the same order as the serial output of RPICT is parsed.
 
 ```json
 {

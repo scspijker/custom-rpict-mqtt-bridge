@@ -1,0 +1,29 @@
+{
+    "Rpict": {
+        "Device": "/dev/ttyAMA0",
+        "Baudrate": 38400
+    },
+    "MqttBroker": {
+        "Host": "<hostname>",
+        "Port": 1337,
+        "Path": "RPICT",
+        "User": "<mqtt_user>",
+        "Password": "<mqtt_password>"
+    },
+    "Channels": [
+        { "Phases": 3, "Measurement": "voltage", "Description": "Net voltages", "Topic": "mains_voltage" },
+        { "Phases": 3, "Measurement": "frequency", "Description": "Net frequenties", "Topic": "mains_frequency" },
+        { "Phases": 3, "Measurement": "power", "Description": "Zonnepanelen", "Topic": "pv" },
+        { "Phases": 3, "Measurement": "power", "Description": "Schuur", "Topic": "shed" },
+        { "Phases": 3, "Measurement": "power", "Description": "Laadpaal", "Topic": "carcharger" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L1.4", "Topic": "GL1_4" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L1.5", "Topic": "GL1_5" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L1.6", "Topic": "GL1_6" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L2.1", "Topic": "GL2_1" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L2.2", "Topic": "GL2_2" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L2.3", "Topic": "GL2_3" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L3.5", "Topic": "GL3_5" },
+        { "Phases": 1, "Measurement": "power", "Description": "Groep L3.6", "Topic": "GL3_6" },
+        { "Phases": 1, "Measurement": "current", "Description": "Net aarde", "Topic": "mains_ground" }
+    ]
+}

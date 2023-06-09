@@ -17,6 +17,8 @@ This project supports Home Assistant MQTT auto discovery and will broadcast disc
 
 The ordering of the channels section is important, this is the same order as the serial output of RPICT is parsed.
 
+My current RPICT config is also in this repo, this might help you relate this bridge's config to the RPICT config.
+
 ```json
 {
     "Rpict": {

@@ -20,18 +20,18 @@ The config has three main sections
 ```json
 {
     "Rpict": {
-        "Device": "/dev/ttyAMA0", // Where can we find the serial socket for RPICT
-        "Baudrate": 38400		  // Baudrate to use
+        "Device": "/dev/ttyAMA0",      // Where can we find the serial socket for RPICT
+        "Baudrate": 38400              // Baudrate to use
     },
     "MqttBroker": {
-        "Host": "<hostname>",			// Where can we find the MQTT broker
+        "Host": "<hostname>",          // Where can we find the MQTT broker
         "Port": 1337,
-        "Path": "RPICT",				// Path to use for broadcasting all channels / measuremnts
-        "User": "<mqtt_user>",			// Mqtt broker authentication
+        "Path": "RPICT",               // Path to use for broadcasting all channels / measuremnts
+        "User": "<mqtt_user>",         // Mqtt broker authentication
         "Password": "<mqtt_password>"
     },
     "Channels": [
-    	// Measurement is a Home Assistant sensor device class: https://www.home-assistant.io/integrations/sensor/
+        // Measurement is a Home Assistant sensor device class: https://www.home-assistant.io/integrations/sensor/
         { "Phases": 3, "Measurement": "voltage", "Description": "Net voltages", "Topic": "mains_voltage" },
         { "Phases": 3, "Measurement": "frequency", "Description": "Net frequenties", "Topic": "mains_frequency" },
         { "Phases": 3, "Measurement": "power", "Description": "Zonnepanelen", "Topic": "pv" },
